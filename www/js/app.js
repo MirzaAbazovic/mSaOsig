@@ -40,46 +40,54 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
 
   // Each tab has its own nav history stack:
 
-  .state('tab.dash', {
-    url: '/dash',
+  .state('tab.contact', {
+    url: '/contact',
     views: {
-      'tab-dash': {
-        templateUrl: 'templates/tab-dash.html',
-        controller: 'DashCtrl'
+      'tab-contact': {
+        templateUrl: 'templates/tab-contact.html',
+        controller: 'ContactCtrl'
       }
     }
   })
 
-  .state('tab.chats', {
-      url: '/chats',
+  .state('tab.policy', {
+      url: '/policy',
       views: {
-        'tab-chats': {
-          templateUrl: 'templates/tab-chats.html',
-          controller: 'ChatsCtrl'
+        'tab-policy': {
+          templateUrl: 'templates/tab-policy.html',
+          controller: 'PolicyCtrl'
         }
       }
     })
-    .state('tab.chat-detail', {
-      url: '/chats/:chatId',
+    .state('tab.policy.pzo', {
+      url: '/policy/pzo',
       views: {
-        'tab-chats': {
-          templateUrl: 'templates/chat-detail.html',
-          controller: 'ChatDetailCtrl'
+        'tab-policy-pzo': {
+          templateUrl: 'templates/policy-pzo.html',
+          controller: 'PolicyPzoCtrl'
         }
       }
     })
-
-  .state('tab.account', {
-    url: '/account',
+  .state('tab.policy.ao', {
+      url: '/policy/ao',
+      views: {
+        'tab-policy-ao': {
+          templateUrl: 'templates/policy-ao.html',
+          controller: 'PolicyAoCtrl'
+        }
+      }
+    })
+  .state('tab.map', {
+    url: '/map',
     views: {
-      'tab-account': {
-        templateUrl: 'templates/tab-account.html',
-        controller: 'AccountCtrl'
+      'tab-map': {
+        templateUrl: 'templates/tab-map.html',
+        controller: 'MapCtrl'
       }
     }
   });
 
   // if none of the above states are matched, use this as the fallback
-  $urlRouterProvider.otherwise('/tab/dash');
+  $urlRouterProvider.otherwise('/tab/contact');
 
 });

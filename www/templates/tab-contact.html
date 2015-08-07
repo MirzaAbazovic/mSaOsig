@@ -1,0 +1,39 @@
+<ion-view view-title="Kontakti">
+  <ion-content class="padding">
+    <div class="list card">
+      <div class="item item-divider">U slučaju nezgode u inostranstvu</div>
+      <div class="item item-body">
+        <div>
+         <a class="item item-icon-left " href="tel:{{contact.mob}}">
+       <i class="icon ion-ios-telephone-outline"></i>
+       SOS Telefon  <span class="item-note">
+    {{contact.mobDisplay}}
+    </span>
+  </a>
+        </div>
+      </div>
+    </div>
+    <div class="list card">
+      <div class="item item-divider">SMS</div>
+      <div class="item item-body">
+          <a class="item item-icon-left " href="sms: {{contact.mob}}">
+     <i class="icon ion-android-textsms"></i>
+    Pošalji SMS 
+      <span class="item-note">
+      {{contact.mobDisplay}}
+    </span>
+  </a>
+ 
+      </div>
+    </div>
+    <div class="list card">
+      <div class="item item-divider">Email</div>
+      <div class="item item-body">
+        <a class="item item-icon-left" href="mailto:{{contact.email}}">
+    <i class="icon ion-email"></i>
+    Pošalji e-mail
+  </a>
+      </div>
+    </div>
+  </ion-content>
+</ion-view>
