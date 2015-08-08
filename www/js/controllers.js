@@ -73,7 +73,79 @@ $ionicPlatform.ready(function() {
 .controller('PolicyAoCtrl', function($scope) {
   
 })
+.controller('MapCtrl', function($scope, $ionicLoading, $compile,$cordovaGeolocation) {
+  $scope.initialize = function() {
 
-.controller('MapCtrl', function($scope) {
- $scope.map = { center: { latitude: 45, longitude: -73 }, zoom: 8 };
-});
+  var posOptions = {timeout: 10000, enableHighAccuracy: false};
+  $cordovaGeolocation
+    .getCurrentPosition(posOptions)
+    .then(function (position) {
+      var lat  = position.coords.latitude
+      var long = position.coords.longitude
+//
+
+  var myLatlng = new google.maps.LatLng(lat,long);
+    var mapOptions = {
+      center: myLatlng,
+      zoom: 12,
+      mapTypeId: google.maps.MapTypeId.ROADMAP
+    };
+    var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+
+     
+    var markerDirekcija = new google.maps.Marker({
+      position: new google.maps.LatLng(43.855050, 18.420705),
+      map: map,
+      title: 'Direkcija | Čobanija 14 | (033)203-270 (033)443-581'
+    });
+
+    var markerFiliSarajevo = new google.maps.Marker({
+      position: new google.maps.LatLng(43.857547, 18.420854),
+      map: map,
+      title: 'Podružnica Sarajevo | Maršala Tita 29 | Tel: (033)569-600  (033)223-835'
+    });
+
+    var markerFiliTuzla = new google.maps.Marker({
+      position: new google.maps.LatLng(44.540692, 18.665643),
+      map: map,
+      title: 'Podružnica Tuzla | Slatina 4 | (035)369-100 (035)369-101'
+    });
+
+    var markerTehnickiVogosca = new google.maps.Marker({
+      position: new google.maps.LatLng(43.896779, 18.361302),
+      map: map,
+      title: 'Tehnički pregled Vogošča | Muje Šejte 7 | (033)426-576 '
+    });
+
+    google.maps.event.addListener(markerDirekcija, 'click', function() {
+      infowindow.open(map,markerDirekcija);
+      
+    });
+
+    google.maps.event.addListener(markerFiliSarajevo, 'click', function() {
+      infowindow.open(map,markerFiliSarajevo);
+    });
+
+    google.maps.event.addListener(markerFiliTuzla, 'click', function() {
+      infowindow.open(map,markerFiliTuzla);
+    });
+
+      
+    google.maps.event.addListener(markerTehnickiVogosca, 'click', function() {
+      infowindow.open(map,markerTehnickiVogosca);
+    });
+
+      
+      $scope.map = map;
+
+
+//
+    }, function(err) {
+      // error
+    });
+
+
+  
+  }
+  //google.maps.event.addDomListener(window, 'load', initialize);
+})

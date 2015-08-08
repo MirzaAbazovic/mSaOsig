@@ -1,6 +1,5 @@
-<ion-view view-title="Pronađite najbližu poslovnicu">      
-    <ion-content data-tap-disabled="true">
-    MAPA POSLOVNICA
-        <ui-gmap-google-map center='map.center' zoom='map.zoom'></ui-gmap-google-map>
-    </ion-content>
+<ion-view title="Map Overview">
+  <ion-content ng-controller="MapCtrl" ng-init="initialize()">
+    <div id="map" data-tap-disabled="true"></div>
+  </ion-content>
 </ion-view>
