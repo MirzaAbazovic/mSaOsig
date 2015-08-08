@@ -1,6 +1,6 @@
 angular.module('starter.controllers', [])
 
-.controller('ContactCtrl', function($scope,$cordovaSms,$cordovaDialogs,$ionicPlatform) {
+.controller('ContactCtrl', function($scope,$cordovaSms,$cordovaDialogs,$ionicPlatform,$cordovaEmailComposer) {
   //var mob =
   $scope.contact = {
     "mob":+38761676178,
@@ -39,6 +39,25 @@ $ionicPlatform.ready(function() {
   //ionicPlatformReady
   });
 //smsSend END
+}
+
+
+
+
+
+
+$scope.sendEmail = function() {
+$ionicPlatform.ready(function() {
+
+            $cordovaEmailComposer.open({
+                to:          ["mirza.abazovic@gmail.com"], // email addresses for TO field
+                isHtml:    false, // indicats if the body is HTML or plain text
+            }, function () {
+                console.log('email view dismissed');
+            },
+            this);    
+        
+})
 }
 //controller
 })
