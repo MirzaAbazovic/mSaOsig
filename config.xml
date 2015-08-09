@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<widget id="ba.sarajevoosiguranje.mob.pzo" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget id="ba.sarajevoosiguranje.mob.pzo" version="0.0.4" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
   <name>Sarajevo-Osiguranje PZO</name>
   <description>
         Aplikacija za kupovinu PZO polica Sarajevo-Osiguranja. 
@@ -12,6 +12,8 @@
   <access origin="tel:*" launch-external="yes"/>
   <access origin="sms:*" launch-external="yes"/>
   <access origin="email:*" launch-external="yes"/>
+  <allow-navigation href="*" />
+  <allow-intent href="*" />
   <preference name="webviewbounce" value="false"/>
   <preference name="UIWebViewBounce" value="false"/>
   <preference name="DisallowOverscroll" value="true"/>

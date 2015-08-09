@@ -1,35 +1,35 @@
-<ion-view view-title="Kontakti">
+<ion-view view-title="PZO Kontakti">
   <ion-content class="padding">
     <div class="list card">
-      <div class="item item-divider">U slučaju nezgode u inostranstvu</div>
+      <div class="item item-divider item-assertive">U slučaju nezgode u inostranstvu</div>
       <div class="item item-body">
         <div>
-         <a class="item item-icon-left " href="tel:{{contact.mob}}">
-       <i class="icon ion-ios-telephone-outline"></i>
-       SOS Telefon  <span class="item-note">
-    {{contact.mobDisplay}}
+         <a class="item item-icon-left assertive" href="tel:{{contact.mob}}">
+       <i class="icon ion-ios-telephone-outline "></i>
+       SOS Telefon  <span class="item-note assertive">
+    <b>{{contact.mobDisplay}}</b>
     </span>
   </a>
         </div>
       </div>
     </div>
     <div class="list card">
-      <div class="item item-divider">SMS</div>
-      <div class="item item-body">
-          <a class="item item-icon-left " href ng-click="sendSms()">
+      <div class="item item-divider item-assertive" >SMS</div>
+      <div class="item item-body ">
+          <a class="item item-icon-left assertive" href ng-click="sendSms()">
      <i class="icon ion-android-textsms"></i>
     Pošalji SMS 
-      <span class="item-note">
-      {{contact.mobDisplay}}
+      <span class="item-note assertive">
+      <b>{{contact.mobDisplay}}</b>
     </span>
   </a>
  
       </div>
     </div>
     <div class="list card">
-      <div class="item item-divider">Email</div>
+      <div class="item item-divider item-assertive">Email</div>
       <div class="item item-body">
-        <a class="item item-icon-left" href ng-click="sendEmail()">
+        <a class="item item-icon-left assertive" href ng-click="sendEmail()">
     <i class="icon ion-email"></i>
     Pošalji e-mail
   </a>
