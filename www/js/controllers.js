@@ -3,8 +3,8 @@ angular.module('starter.controllers', [])
 .controller('ContactCtrl', function($scope,$cordovaSms,$cordovaDialogs,$ionicPlatform,$cordovaEmailComposer) {
   //var mob =
   $scope.contact = {
-    "mob":"+38761676178",
-    "mobDisplay":"(+387) 61 676 178",
+    "mob":"+38761489999",
+    "mobDisplay":"(+387) 61 489 999",
     "email":"hracic@sarajevoosiguranje.ba"
   }
   
@@ -55,17 +55,81 @@ $ionicPlatform.ready(function() {
 })
 //sendEmail END
 }
-
+  
 //controller END
 })
 
 .controller('PolicyCtrl', function($scope) {
+  $scope.policy = {};
+  var today = new Date();
+  $scope.policy.dateFrom = today.getDate();
+  $scope.policy.dateTo = today.getDate();
+  $scope.policy.number ="123456";
+
 })
 
 .controller('PolicyPzoCtrl', function($scope) {
 })
 
 .controller('PolicyAoCtrl', function($scope) {
+})
+
+.controller('CarCtrl', function($scope,$ionicModal) {
+
+  $ionicModal.fromTemplateUrl('step1-modal.html', {
+    scope: $scope,
+    animation: 'slide-in-up'
+  }).then(function(modal) {
+    $scope.modal1 = modal;
+  });
+  $scope.openModal1 = function() {
+    $scope.modal1.show();
+  };
+  $scope.closeModal1 = function() {
+    $scope.modal1.hide();
+  };
+  //Cleanup the modal when we're done with it!
+  $scope.$on('$destroy', function() {
+    $scope.modal1.remove();
+  });
+  
+
+
+$ionicModal.fromTemplateUrl('step2-modal.html', {
+    scope: $scope,
+    animation: 'slide-in-up'
+  }).then(function(modal) {
+    $scope.modal2 = modal;
+  });
+  $scope.openModal2 = function() {
+    $scope.modal2.show();
+  };
+  $scope.closeModal2 = function() {
+    $scope.modal2.hide();
+  };
+  //Cleanup the modal when we're done with it!
+  $scope.$on('$destroy', function() {
+    $scope.modal2.remove();
+  });
+
+
+$ionicModal.fromTemplateUrl('step3-modal.html', {
+    scope: $scope,
+    animation: 'slide-in-up'
+  }).then(function(modal) {
+    $scope.modal3 = modal;
+  });
+  $scope.openModal3 = function() {
+    $scope.modal3.show();
+  };
+  $scope.closeModal3 = function() {
+    $scope.modal3.hide();
+  };
+  //Cleanup the modal when we're done with it!
+  $scope.$on('$destroy', function() {
+    $scope.modal3.remove();
+  });
+
 })
 
 

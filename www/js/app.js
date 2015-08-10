@@ -9,7 +9,8 @@ angular.module('starter', [
   'ionic', 
   'starter.controllers', 
   'starter.services',
-  'ngCordova'
+  'ngCordova',
+  'ngSanitize'
   ])
 
 .run(function($ionicPlatform) {
@@ -88,6 +89,16 @@ angular.module('starter', [
       'tab-map': {
         templateUrl: 'templates/tab-map.html',
         controller: 'MapCtrl'
+      }
+    }
+  })
+
+   .state('tab.car', {
+    url: '/car',
+    views: {
+      'tab-car': {
+        templateUrl: 'templates/tab-car.html',
+        controller: 'CarCtrl'
       }
     }
   });

@@ -1,11 +1,17 @@
-<ion-view view-title="PZO Kontakti">
+<ion-view>
+  <ion-nav-buttons side="left">
+        <img src="img/marker.jpg" />
+   </ion-nav-buttons>
+ <ion-nav-title >
+PZO Kontakti 
+    </ion-nav-title>
   <ion-content class="padding">
     <div class="list card">
       <div class="item item-divider item-assertive">U slučaju nezgode u inostranstvu</div>
       <div class="item item-body">
         <div>
          <a class="item item-icon-left assertive" href="tel:{{contact.mob}}">
-       <i class="icon ion-ios-telephone-outline "></i>
+       <i class="icon ion-ios-telephone"></i>
        SOS Telefon  <span class="item-note assertive">
     <b>{{contact.mobDisplay}}</b>
     </span>

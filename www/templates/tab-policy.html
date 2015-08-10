@@ -1,10 +1,57 @@
-<ion-view view-title="Ugovorite novu policu">
+<ion-view view-title="Kalkulator cijene police PZO">
+
+  <ion-nav-buttons side="left">
+        <img src="img/marker.jpg" />
+   </ion-nav-buttons>
   <ion-content>
 
-<button class="button button-block button-assertive button-outline">
-      <img src="img/Optk.jpg"></br>
-       <b> Zaključite policu putničkog zdravstvenog osiguranja (uskoro)</b>
+
+
+<div class="card">
+  <div class="item item-text-wrap">
+
+       <b class="assertive"> 324234Izračunajte cijenu police putničkog zdravstvenog osiguranja - PZO</b>
+  </div>
+</div>
+
+
+
+<div class="list">
+  <label class="item item-input">
+    <span class="input-label">Pocetak</span>
+    <input type="date" ng-model="policy.dateFrom" min="policy.dateFrom">
+  </label>
+  <label class="item item-input">
+    <span class="input-label">Kraj</span>
+    <input type="date" ng-model="policy.dateTo">
+  </label>
+</div>
+
+<label class="item item-input">
+  <span class="input-label">Broj odraslih</span>
+  <input type="number">
+</label>
+
+
+<label class="item item-input">
+  <span class="input-label">Broj maloljetnih osoba</span>
+  <input type="number">
+</label><button class="button button-block button-assertive button-outline">
+    
+       <b>Individualna polica</b>
 </button>
+<button class="button button-block button-assertive button-outline">
+     
+       <b> Porodična polica</b>
+</button>
+<button class="button button-block button-assertive button-outline">
+      <b> Posebna ponuda:</b>
+      Porodično putničko zdravstveno osiguranje za zemlje regiona
+       	<br/>
+       	(Hrvatska, Crna Gora, Srbija i Makedonija) </br>Cijena 29 KM za 15 dana
+
+</button>
+
    
   </ion-content>
 </ion-view>
