@@ -15,11 +15,10 @@ angular.module('mSaOsig.controllers', [])
         "email": "pzo@sarajevoosiguranje.ba"
     }
     $scope.sendSms1 = function(){
-          $ionicPlatform.ready(function () {
-       
+          $ionicPlatform.ready(function () {       
         var number = $scope.contact.mob;
         $cordovaSocialSharing
-    .shareViaSMS("t", number)
+    .shareViaSMS("", number)
     .then(function(result) {
       // Success!
     }, function(err) {
@@ -27,6 +26,7 @@ angular.module('mSaOsig.controllers', [])
     });
 
     })}
+          /*
     $scope.sendSms = function () {
         $ionicPlatform.ready(function () {
             $cordovaDialogs.prompt('Poruka', 'Upisite poruku', ['Odustani', 'Pošalji'], '')
@@ -55,6 +55,7 @@ angular.module('mSaOsig.controllers', [])
               });
         });
     }
+    */
     $scope.sendEmail = function () {
        //$ionicPlatform.ready(function () {
             $cordovaEmailComposer.open({
