@@ -22,7 +22,7 @@ PZO Kontakti
     <div class="list card">
       <div class="item item-divider item-assertive" >SMS</div>
       <div class="item item-body ">
-          <a class="item item-icon-left assertive" href ng-click="sendSms()">
+          <a class="item item-icon-left assertive" href ng-click="sendSms1()">
      <i class="icon ion-android-textsms"></i>
     Pošalji SMS 
       <span class="item-note assertive">
@@ -35,7 +35,7 @@ PZO Kontakti
     <div class="list card">
       <div class="item item-divider item-assertive">Email</div>
       <div class="item item-body">
-        <a class="item item-icon-left assertive" href ng-click="sendEmail()">
+        <a class="item item-icon-left assertive" href="mailto:{{contact.email}}" >
     <i class="icon ion-email"></i>
     Pošalji e-mail
   </a>
