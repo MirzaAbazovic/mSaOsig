@@ -24,7 +24,7 @@ input:focus {
     box-shadow:0 0 10px #9ecaed;
 }
 
-.h3{
-    color: red;
+ul {
+  list-style: disc; 
 }
 
