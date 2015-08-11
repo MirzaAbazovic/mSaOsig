@@ -146,7 +146,7 @@ angular.module('mSaOsig.controllers', [])
     $scope.openModal4 = function () {
         $scope.modal4.show();
     };
-    $scope.closeModal3 = function () {
+    $scope.closeModal4 = function () {
         $scope.modal4.hide();
     };
     //Cleanup the modal when we're done with it!
@@ -165,7 +165,7 @@ angular.module('mSaOsig.controllers', [])
     $scope.openModal5 = function () {
         $scope.modal5.show();
     };
-    $scope.closeModal3 = function () {
+    $scope.closeModal5 = function () {
         $scope.modal5.hide();
     };
     //Cleanup the modal when we're done with it!
@@ -186,7 +186,7 @@ angular.module('mSaOsig.controllers', [])
         $scope.modal6.show();
     };
     $scope.closeModal6 = function () {
-        $scope.modal4.hide();
+        $scope.modal6.hide();
     };
     //Cleanup the modal when we're done with it!
     $scope.$on('$destroy', function () {
