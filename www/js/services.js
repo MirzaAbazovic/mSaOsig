@@ -60,6 +60,9 @@ angular.module('mSaOsig.services', [])
             return q.promise;
         },
         getMarkersData: function () {
+           //var markersRef = new Firebase("https://incandescent-fire-257.firebaseio.com/");
+  
+          //$scope.data = $firebaseObject(ref);
             return [
             {
                 lat: 43.855050, lng: 18.420705,
@@ -151,6 +154,20 @@ angular.module('mSaOsig.services', [])
                 '<p><b>Pon-Pet 07:30-15:30</b></p>' +
                 '</div>' +
                 '</div>'}
+                , 
+                 {
+                  lat: 43.991518,  lng: 18.181917,
+                  title: "Podružnica Visoko | Musala 1",
+                  content: '<div>' +
+                '<b>Podruznica Visoko</b>' +
+                '<p>Adresa: <b> Musala 1</b> <p>' +
+                '<div>' +
+                '<p>Tel: <b><a href="tel:+38732738355">(032)738-355</a></b></b></p>' +
+                '<p>Radno vrijeme</p>' +
+                '<p><b>Pon-Pet 07:30-15:30</b></p>' +
+                '</div>' +
+                '</div>'
+              }
             ];
         }
     };

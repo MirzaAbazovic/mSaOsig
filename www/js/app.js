@@ -3,7 +3,8 @@ angular.module('starter', [
   'mSaOsig.controllers',
   'mSaOsig.services',
   'ngCordova',
-  'ngSanitize'
+  'ngSanitize',
+  'firebase'
 ])
 
 .run(function ($ionicPlatform) {
