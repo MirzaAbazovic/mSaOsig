@@ -99,6 +99,19 @@ angular.module('mSaOsig.services', [])
                 '<p><b>Pon-Pet 07:30-15:30</b></p>' +
                 '</div>' +
                 '</div>'
+              },
+              {
+                  lat: 43.344792,  lng: 17.808845,
+                  title: "Podružnica Mostar | Alekse Šantića 11",
+                  content: '<div>' +
+                '<b>Podruznica Mostar</b>' +
+                '<p>Adresa: <b>Alekse Šantića 11</b> <p>' +
+                '<div>' +
+                '<p>Tel: <b><a href="tel:+38736580039">(036)580-039</a></b></b></p>' +
+                '<p>Radno vrijeme</p>' +
+                '<p><b>Pon-Pet 07:30-15:30</b></p>' +
+                '</div>' +
+                '</div>'
               }
             ];
         }
