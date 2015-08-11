@@ -99,7 +99,7 @@ angular.module('mSaOsig.controllers', [])
         $scope.modal1.remove();
     });
 
-$scope.ime='Ajla';
+
 
     $ionicModal.fromTemplateUrl('step2-modal.html', {
         scope: $scope,
