@@ -112,7 +112,45 @@ angular.module('mSaOsig.services', [])
                 '<p><b>Pon-Pet 07:30-15:30</b></p>' +
                 '</div>' +
                 '</div>'
-              }
+              },
+              {
+                  lat: 43.654807,  lng: 17.962542,
+                  title: "Poslovnica Konjic | Trg državnosti bb",
+                  content: '<div>' +
+                '<b>Poslovnica Konjic</b>' +
+                '<p>Adresa: <b>Trg državnosti bb</b> <p>' +
+                '<div>' +
+                '<p>Tel: <b><a href="tel:+38736726272">(036)726-272</a></b></b></p>' +
+                '<p>Radno vrijeme</p>' +
+                '<p><b>Pon-Pet 07:30-15:30</b></p>' +
+                '</div>' +
+                '</div>'
+              }, 
+               {
+                  lat: 44.227218,  lng: 17.663831,
+                  title: "Podružnica Travnik | Fatmić 1",
+                  content: '<div>' +
+                '<b>Podruznica Travnik</b>' +
+                '<p>Adresa: <b> Fatmić 1</b> <p>' +
+                '<div>' +
+                '<p>Tel: <b><a href="tel:+38730511558">(030)511-558</a></b></b></p>' +
+                '<p>Radno vrijeme</p>' +
+                '<p><b>Pon-Pet 07:30-15:30</b></p>' +
+                '</div>' +
+                '</div>'
+              }, 
+               {
+                  lat: 44.701677,  lng: 18.308553,
+                  title: "Ispostava Gračanica | Bosanskih Kraljeva bb",
+                  content: '<div>' +
+                '<b>Ispostava Gračanica</b>' +
+                '<p>Adresa: <b> Bosanskih Kraljeva bb</b> <p>' +
+                '<div>' +
+                '<p>Tel: <b><a href="tel:+38735369114">(035)369-114</a></b></b></p>' +
+                '<p>Radno vrijeme</p>' +
+                '<p><b>Pon-Pet 07:30-15:30</b></p>' +
+                '</div>' +
+                '</div>'}
             ];
         }
     };
