@@ -9,8 +9,7 @@ angular.module('mSaOsig.controllers', [])
      $cordovaSocialSharing) {
     //var mob =
     $scope.contact = {
-        //"mob": "+38761489999",//hamo
-        "mob": "+38761636785",        
+        "mob": "+38761489999",//hamo
         "mobDisplay": "(+387) 61 489 999",
         "email": "pzo@sarajevoosiguranje.ba"
     }
@@ -135,6 +134,63 @@ angular.module('mSaOsig.controllers', [])
     //Cleanup the modal when we're done with it!
     $scope.$on('$destroy', function () {
         $scope.modal3.remove();
+    });
+
+
+  $ionicModal.fromTemplateUrl('step4-modal.html', {
+        scope: $scope,
+        animation: 'slide-in-up'
+    }).then(function (modal) {
+        $scope.modal4 = modal;
+    });
+    $scope.openModal4 = function () {
+        $scope.modal4.show();
+    };
+    $scope.closeModal3 = function () {
+        $scope.modal4.hide();
+    };
+    //Cleanup the modal when we're done with it!
+    $scope.$on('$destroy', function () {
+        $scope.modal4.remove();
+    });
+
+
+
+  $ionicModal.fromTemplateUrl('step5-modal.html', {
+        scope: $scope,
+        animation: 'slide-in-up'
+    }).then(function (modal) {
+        $scope.modal5 = modal;
+    });
+    $scope.openModal5 = function () {
+        $scope.modal5.show();
+    };
+    $scope.closeModal3 = function () {
+        $scope.modal5.hide();
+    };
+    //Cleanup the modal when we're done with it!
+    $scope.$on('$destroy', function () {
+        $scope.modal5.remove();
+    });
+
+
+
+
+  $ionicModal.fromTemplateUrl('step6-modal.html', {
+        scope: $scope,
+        animation: 'slide-in-up'
+    }).then(function (modal) {
+        $scope.modal6 = modal;
+    });
+    $scope.openModal6 = function () {
+        $scope.modal6.show();
+    };
+    $scope.closeModal6 = function () {
+        $scope.modal4.hide();
+    };
+    //Cleanup the modal when we're done with it!
+    $scope.$on('$destroy', function () {
+        $scope.modal6.remove();
     });
 
 })

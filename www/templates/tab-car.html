@@ -1,93 +1,141 @@
-<ion-view > 
-  <ion-nav-buttons side="left">
+<ion-view>
+    <ion-nav-buttons side="left">
         <img src="img/marker.jpg" />
-   </ion-nav-buttons>
- <ion-nav-title >
-Pomoć na cesti 
+    </ion-nav-buttons>
+    <ion-nav-title>
+        Pomoć na cesti
     </ion-nav-title>
-  <ion-content class="padding">
-  <h4 class="assertive">SOS 24 sata / 365 dana u godini</h4> 
-  <h4 class="assertive">U Bosni i Hercegovini i Evropi</h4>
-  Svaki vlasnik PZO police dobija pomoć na cesti za vrijeme trajanja police 
-  <ion-list>
-  <ion-item class="assertive" ng-click="openModal1()">
-   <b> 1. Korak: Osiguranje</b>
-  </ion-item>
-   <ion-item class="assertive" ng-click="openModal2()">
-    <b>2. Korak: Aktivacija prava</b>
-  </ion-item>
-   <ion-item class="assertive" ng-click="openModal3()">
-    <b>3. Korak: Početak vazenja prava</b>
-  </ion-item>
-   </ion-item>
-   <ion-item class="assertive" ng-click="openModal4()">
-   <b>4. Korak: Način korištenja asistencije</b>
-  </ion-item>
-   </ion-item>
-   <ion-item  class="assertive" ng-click="openModal5()">
-   <b> 5. Korak: Prava i boniteti</b>
-  </ion-item>
-   </ion-item>
-   <ion-item class="assertive" ng-click="openModal6()">
-   <b>6. Korak: Limiti i napomene</b>
-  </ion-item>
-  
-</ion-list>
+    <ion-content class="padding">
+        <h4 class="assertive">SOS 24 sata / 365 dana u godini</h4>
+        <h4 class="assertive">U Bosni i Hercegovini i Evropi</h4>
+        Svaki vlasnik PZO police dobija pomoć na cesti za vrijeme trajanja police
+        <ion-list>
+            <ion-item class="assertive" ng-click="openModal1()">
+                <b> 1. Korak: Osiguranje</b>
+            </ion-item>
+            <ion-item class="assertive" ng-click="openModal2()">
+                <b>2. Korak: Aktivacija prava</b>
+            </ion-item>
+            <ion-item class="assertive" ng-click="openModal3()">
+                <b>3. Korak: Početak vazenja prava</b>
+            </ion-item>
+            </ion-item>
+            <ion-item class="assertive" ng-click="openModal4()">
+                <b>4. Korak: Način korištenja asistencije</b>
+            </ion-item>
+            </ion-item>
+            <ion-item class="assertive" ng-click="openModal5()">
+                <b> 5. Korak: Prava i boniteti</b>
+            </ion-item>
+            </ion-item>
+            <ion-item class="assertive" ng-click="openModal6()">
+                <b>6. Korak: Limiti i napomene</b>
+            </ion-item>
 
-<script id="step1-modal.html" type="text/ng-template">
-  <ion-modal-view>
-    <ion-header-bar align-title="center" class="bar-assertive">
-     
-      <h1 class="title">1. Korak: Osiguranje</h1>
-      <div class="buttons">
-   
-    <button class="button button-assertive" ng-click="closeModal1()"><i class="icon ion-close-circled"></i></button></button>
-  </div>
-    </ion-header-bar>
-    <ion-content>
-      Klijenti programa pomoci ....
+        </ion-list>
+
+        <script id="step1-modal.html" type="text/ng-template">
+            <ion-modal-view>
+                <ion-header-bar align-title="left" class="bar-assertive">
+
+                    <h1 class="title">1. Korak: Osiguranje</h1>
+                    <div class="buttons">
+
+                        <button class="button button-assertive" ng-click="closeModal1()"><i class="icon ion-close-circled"></i></button></button>
+                    </div>
+                </ion-header-bar>
+                <ion-content>
+                    Klijenti programa pomoci ....
+                </ion-content>
+            </ion-modal-view>
+        </script>
+
+
+
+        <script id="step2-modal.html" type="text/ng-template">
+            <ion-modal-view>
+                <ion-header-bar align-title="left" class="bar-assertive">
+
+                    <h1 class="title">2. Korak: Aktivacija prava</h1>
+                    <div class="buttons">
+
+                        <button class="button button-assertive" ng-click="closeModal2()"><i class="icon ion-close-circled"></i></button></button>
+                    </div>
+                </ion-header-bar>
+                <ion-content>
+                    Svaki klijent ...
+                    <h3>SOS {broj PZO police} {ime} {prezime} </h3>
+                    primjer:
+                    <u>SOS 455841 Mujo Mujic</u>
+                    na broj <a ng-href="sms:+38791415010">(091) 415-010</a>
+                </ion-content>
+            </ion-modal-view>
+        </script>
+
+
+        <script id="step3-modal.html" type="text/ng-template">
+            <ion-modal-view>
+                <ion-header-bar align-title="left" class="bar-assertive">
+
+                    <h1 class="title">3. Korak: Početak važenja prava</h1>
+                    <div class="buttons">
+
+                        <button class="button button-assertive" ng-click="closeModal3()"><i class="icon ion-close-circled"></i></button></button>
+                    </div>
+                </ion-header-bar>
+                <ion-content>
+                    Kada ste poslali ...
+                </ion-content>
+            </ion-modal-view>
+        </script>
+
+        <script id="step4-modal.html" type="text/ng-template">
+            <ion-modal-view>
+                <ion-header-bar align-title="left" class="bar-assertive">
+
+                    <h1 class="title">4. Korak: Način korištenja asistencije</h1>
+                    <div class="buttons">
+
+                        <button class="button button-assertive" ng-click="closeModal4()"><i class="icon ion-close-circled"></i></button></button>
+                    </div>
+                </ion-header-bar>
+                <ion-content>
+                    U slučaju kvara ...
+                </ion-content>
+            </ion-modal-view>
+        </script>
+
+        <script id="step5-modal.html" type="text/ng-template">
+            <ion-modal-view>
+                <ion-header-bar align-title="left" class="bar-assertive">
+
+                    <h1 class="title">5. Korak: Prava i boniteti </h1>
+                    <div class="buttons">
+
+                        <button class="button button-assertive" ng-click="closeModal5()"><i class="icon ion-close-circled"></i></button></button>
+                    </div>
+                </ion-header-bar>
+                <ion-content>
+                    U slučaju potrebe ...
+                </ion-content>
+            </ion-modal-view>
+        </script>
+
+        <script id="step6-modal.html" type="text/ng-template">
+            <ion-modal-view>
+                <ion-header-bar align-title="left" class="bar-assertive">
+
+                    <h1 class="title">6. Korak: Limiti i napomene</h1>
+                    <div class="buttons">
+
+                        <button class="button button-assertive" ng-click="closeModal6()"><i class="icon ion-close-circled"></i></button></button>
+                    </div>
+                </ion-header-bar>
+                <ion-content>
+                    Maksimalni limiti ...
+                </ion-content>
+            </ion-modal-view>
+        </script>
+
     </ion-content>
-  </ion-modal-view>
-</script>
-      
-
-
-      <script id="step2-modal.html" type="text/ng-template">
-  <ion-modal-view>
-    <ion-header-bar  align-title="center" class="bar-assertive">
-  
-      <h1 class="title">2. Korak: Aktivacija prava</h1>
-         <div class="buttons">
-   
-    <button class="button button-assertive" ng-click="closeModal2()"><i class="icon ion-close-circled"></i></button></button>
-  </div>
-    </ion-header-bar>
-    <ion-content>
-     Svaki klijent ...
-     <h3>SOS {broj PZO police} {ime} {prezime} </h3>
-     primjer:
-     <u>SOS 455841 Mujo Mujic</u> 
-     na broj <a ng-href="sms:+38791415010">(091) 415-010</a>
-    </ion-content>
-  </ion-modal-view>
-</script>
-
-
-      <script id="step3-modal.html" type="text/ng-template">
-  <ion-modal-view>
-    <ion-header-bar  align-title="center" class="bar-assertive">
-   
-      <h1 class="title">3. Korak: POcetak vazenja prava</h1>
-         <div class="buttons">
-   
-    <button class="button button-assertive" ng-click="closeModal3()"><i class="icon ion-close-circled"></i></button></button>
-  </div>
-    </ion-header-bar>
-    <ion-content>
-  Kada ste poslali ...
-    </ion-content>
-  </ion-modal-view>
-</script>
-
-  </ion-content>
 </ion-view>
