@@ -70,21 +70,49 @@
                     </div>
                 </ion-header-bar>
                 <ion-content>
-                    Svaki klijent ...
-                    <h3>SOS {broj PZO police} {ime} {prezime} </h3>
-                    primjer:
-                    <u>SOS 455841 Mujo Mujic</u>
-                    <br>
 
+                    <div class="card">
+                      <div class="item item-text-wrap ">
+                          Svaki klijent koji uz PZO policu Sarajevo-Osiguranja dobije SOS24h sticker, dužan je da izvrši aktivaciju svojih prava iz programa SOS24h i to putem slanja SMS poruke. 
+                          <br><br>
+                            Klijent aktivira svoja prava slanjem SMS poruke u formatu: <br> <br>
+                        <h3 class=assertive>SOS {broj PZO police} {ime} {prezime} </h3> <br>
+
+                        <p>na broj: </p>
+                        <a class="item item-icon-left assertive" href ng-click="sendSms1()">
+                            <i class="icon ion-android-textsms"></i>
+                                091 415 010
+                            <span class="item-note assertive">
+                            <b>{{contact.mobDisplay}}</b>
+                        </span>
+                        </a>
+
+                       </div>
+                    </div>
+                 
+                    <div class="card">
+                      <div class="item item-text-wrap ">
+                        primjer:
+                        <b>SOS 294850 Emir Begić</b>
+                        <br>
+                       </div>
+                    </div>
+                 
                     <div class="card">
 
                     <div class="item item-image">
-    <img src="img/sticker_1.jpg" alt="sticker" align="middle">
-  </div>
+                        <img src="img/sticker_1.jpg" alt="sticker" align="middle">
+                    </div> 
+
+                    <div class="card">
+                      <div class="item item-text-wrap ">
+                        <b>Aktivaciju nije moguće izvršiti izvan Bosne i Hercegovine</b>
+                       </div>
+                    </div>
+
 
 </div>
 
-                    na broj <a ng-href="sms:+38791415010">(091) 415-010</a>
                 </ion-content>
             </ion-modal-view>
         </script>
@@ -102,7 +130,14 @@
                     </div>
                 </ion-header-bar>
                 <ion-content>
-                    Kada ste poslali ...
+
+                    <div class="card">
+                      <div class="item item-text-wrap ">
+                        Kada ste poslali aktivacijski SMS, sistem SOS24h programa će automatski potvrditi Vašu aktivaciju. Pravo na korištenje usluga asistencije počinje važiti 3h nakon poslanog SMS-a. Aktivirana prava važe maksimalno 15 dana od dana aktivacije, odnosno najduže do isteka PZO police osiguranja. 
+                        
+                       </div>
+                    </div>
+
                 </ion-content>
             </ion-modal-view>
         </script>
@@ -119,7 +154,37 @@
                     </div>
                 </ion-header-bar>
                 <ion-content>
-                    U slučaju kvara ...
+                    <div class="card">
+                      <div class="item item-text-wrap ">
+                    U slučaju kvara na vozilu ili prometne nezgode potrebno je da pripremite sljedeće dokumente: 
+                      </div>
+                    </div>
+
+                 <div class="card">
+                      <div class="item item-text-wrap ">
+                        - PZO policu osiguranja <br>
+                        - Saobraćajnu/Prometnu dozvolu 
+                      </div>
+                    </div>
+                  <div class="card">
+                      <div class="item item-text-wrap ">
+                        i pozovete ALARM centar PGM-a na sljedeći broj telefona: 
+                        <a class="item item-icon-left assertive" href="tel:+38733560761">
+                        <i class="icon ion-ios-telephone"></i>
+                        00 387 33 560 761  <span class="item-note assertive">
+                        <b>{{contact.mobDisplay}}</b>
+                        </span>
+                        </a>
+                        i slijedite upute operatera. 
+                      </div>
+                    </div>
+
+                    <div class="card">
+                      <div class="item item-text-wrap ">
+                        Asistencija će biti organizovana u najkraćem mogućem vremenu. Refundacije troškova asistencija koje nisu organizirane putem ALARM Centra PGM-a ne mogu biti izvršene. 
+                      </div>
+                    </div>
+
                 </ion-content>
             </ion-modal-view>
         </script>

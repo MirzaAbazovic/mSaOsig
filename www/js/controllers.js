@@ -99,7 +99,18 @@ angular.module('mSaOsig.controllers', [])
         $scope.modal1.remove();
     });
 
+   $scope.sendSms1 = function(){
+          $ionicPlatform.ready(function () {       
+        var number = $scope.contact.mob;
+        $cordovaSocialSharing
+    .shareViaSMS("", number)
+    .then(function(result) {
+      // Success!
+    }, function(err) {
+      // An error occurred. Show a message to the user
+    });
 
+    })}
 
     $ionicModal.fromTemplateUrl('step2-modal.html', {
         scope: $scope,
